@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CommentsModule } from './comments/comments.module';
 import { CommentComponent } from './comments/components/comment/comment.component';
 import { CommentsComponent } from './comments/components/comments/comments.component';
+//import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 //import { CommentFormComponent } from './comments/components/comment-form/comment-form.component';
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CommentsComponent } from './comments/components/comments/comments.compo
     ProductsModule,
     CartModule,
     HttpClientModule,
-    CommentsModule
+    CommentsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

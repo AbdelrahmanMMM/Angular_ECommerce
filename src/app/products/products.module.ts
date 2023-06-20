@@ -4,23 +4,27 @@ import { AllProductsComponent } from './components/all-products/all-products.com
 import { DetailsComponent } from './components/details/details.component';
 import { SharedModule } from '../shared/shared.module';
 import { ProductComponent } from './components/product/product.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { CommentsModule } from '../comments/comments.module';
+import { RatingComponent } from './components/rating/rating.component';
+import { NgbModule, NgbRating } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
   declarations: [
     AllProductsComponent,
     DetailsComponent,
-    ProductComponent
+    ProductComponent,
+    RatingComponent
   ],
   imports: [
     CommonModule,
     SharedModule,
     FormsModule,
     RouterModule,
-    CommentsModule
-  ]
+    CommentsModule,ReactiveFormsModule, NgbModule
+  ],
+  exports:[RatingComponent]
 })
 export class ProductsModule { }
